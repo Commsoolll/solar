@@ -1,0 +1,210 @@
+body {
+  background-color: #f1f1f1;
+  color: #0f141e;
+
+  font-size: 17px; /*Размер шрифта*/
+  font-weight: normal; /*Жирность шрифта*/
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /*Выбор шрифта*/
+
+  /*Может заменить код выше font: normal 17px 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+}
+
+a {
+  color: aqua;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
+
+a:active {
+  color: red;
+}
+
+a:visited {
+  color: black;
+}
+
+.avatar {
+  width: 250px; /*Высота картинки */
+  border-radius: 50px; /*Скругление картинки */
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 025); /*Добавляет тень картинке */
+}
+
+.info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .info {
+    text-align: center;
+    display: block;
+  }
+}
+
+.info-text {
+  margin-left: 40px;
+}
+
+.info-text {
+  margin-bottom: 10px;
+}
+
+.info p {
+  color: #86898f;
+  margin: 0; /*Отступы в тексте */
+  font-style: italic; /*Наклон текста */
+  font-weight: bold; /*Жирный текст */
+  text-decoration: underline; /*Подчёркивание */
+  /* text-transform: lowercase; Трансформация текста */
+  /* letter-spacing: 3px; Расстояние между символами*/
+  /* word-spacing: 42px; Расстояние между словами */
+}
+
+/* Box model */
+
+.container {
+  max-width: 750px; /*адаптация по размеру экрана*/
+  margin: auto; /*Сайт по центру */
+  padding-top: 30px;
+}
+
+/* .social{
+    background: red;
+    padding: 15px;
+    margin: 20px;
+
+    border: 4px solid green;
+    border-bottom-style: dotted;
+    border-top-width: 15px;
+    border-right-color: blue;
+   
+
+} */
+
+.bg-yellow {
+  background: #fff9dc;
+}
+
+.bg-green {
+  background: #e5ffe7;
+}
+
+.bg-red {
+  background: #ffe5e5;
+}
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.list {
+  padding: 0 20px;
+}
+.list li {
+  color: #86898f;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  padding-bottom: 10px;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+  color: #86898f;
+}
+
+.link-list {
+  list-style: square;
+  padding: 0;
+}
+
+.link-list li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #86898f;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  color: black;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.row {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.row > .form-group:last-child {
+  margin-right: 0;
+}
+.btn {
+  background: black;
+  padding: 15px 20px;
+  color: white;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* position */
+
+.position {
+  position: relative;
+  border: 4px solid black;
+  margin-top: 40px;
+  padding: 20px;
+  height: 300px;
+}
+
+.box {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50%;
+  left: 23px;
+  width: 50px;
+  height: 50px;
+  background: lightcoral;
+}
